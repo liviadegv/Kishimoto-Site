@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #111;
+}
+
+.logo img {
+    width: 50%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 40px;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.profile button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap; 
+    display: inline-flex; 
+    align-items: center; 
+}
+
+.cart-container {
+    padding: 20px;
+}
+
+.restaurant-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.restaurant-logo img {
+    width: 7%;
+}
+
+h1 {
+    text-align: center;
+    color: #c0392b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #c0392b;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+tbody td img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+tbody td div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+tbody td h4 {
+    margin: 0 0 5px 0;
+}
+
+tbody td p {
+    margin: 0;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.remove {
+    background-color: transparent;
+    color: #e74c3c;
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+input[type="text"] {
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.promo-code {
+    display: flex;
+    align-items: center;
+}
+
+.promo-code input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.promo-code button {
+    margin-left: 10px;
+}
+
+.summary-details {
+    text-align: right;
+}
+
+.summary-details p {
+    margin: 5px 0;
+}
+
+.proceed-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color:#c0392b;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.footer-info,
+.footer-social,
+.footer-form {
+    width: 30%;
+}
+
+.footer-form {
+    text-align: right;
+}
+
+.footer-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   
+    
+}
+
+.footer-form .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    
+}
+
+.footer-form .form-group label,
+.footer-form .form-group input,
+.footer-form .form-group textarea {
+    text-align: center;
+    
+}
+.social-icons img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}

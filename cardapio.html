@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Restaurante Kishimoto</title>
+    <link rel="stylesheet" href="cardapio.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="https://pbs.twimg.com/media/GP_OnOYXgAA6gnd?format=png&name=240x240" alt="Logo Kishimoto">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="nossahistoria.html">Nossa História</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button>Buscar</button>
+                </div>
+                <div class="profile">
+                    <a href="carrinho.html"><img src="https://icones.pro/wp-content/uploads/2021/05/icone-de-panier-rouge.png" alt="Perfil"></a>
+                    <button>Fazer meu pedido</button>
+                </div>
+            </nav>
+        </div>
+        <nav class="categories-nav">
+            <div class="availability">
+                <span>Disponíveis</span>
+                <span class="status-indicator"></span>
+            </div>
+            <ul>
+                <li><a href="#">Entradas</a></li>
+                <li><a href="#">Sushi</a></li>
+                <li><a href="#">Sashimi</a></li>
+                <li><a href="#">Temaki</a></li>
+                <li><a href="#">Bebidas</a></li>
+                <li><a href="#">Sobremesas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card-container">
+            <div class="card">
+                <div class="card-image">
+                    <img src="temaki.jpg" alt="Temaki">
+                </div>
+                <div class="card-text">
+                    <h3>Temaki</h3>
+                    <p>Arroz para Sushi (Shari), Salmão, Cream Cheese e Cebolinha</p>
+                    <p class="price">R$18,00</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="makimono.jpg" alt="Makimono">
+                </div>
+                <div class="card-text">
+                    <h3>Makimono</h3>
+                    <p>Arroz para Sushi (Shari), Pepino, Cenoura e Alga Nori</p>
+                    <p class="price">R$25,00</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="sushi.jpg" alt="Sushi">
+                </div>
+                <div class="card-text">
+                    <h3>Sushi</h3>
+                    <p>Arroz para Sushi (Shari) e Salmão</p>
+                    <p class="price">R$14,50</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contato</h3>
+                
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Email: contato@kishimoto.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Redes Sociais</h3>
+                <p>Siga-nos nas redes sociais:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://cdn.worldvectorlogo.com/logos/twitter-logo-2.svg" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-form">
+                <h3>Fale Conosco</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="footer-name">Nome:</label>
+                        <input type="text" id="footer-name" name="footer-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="footer-email">Email:</label>
+                        <input type="email" id="footer-email" name="footer-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="footer-message">Mensagem:</label>
+                        <textarea id="footer-message" name="footer-message" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

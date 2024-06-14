@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a senha</title>
+    <link rel="stylesheet" type="text/css" href="esqueceu.css" media="screen" />
+    
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="kishimotofoto">
+                <img src="https://pbs.twimg.com/media/GP_OnOYXgAA6gnd?format=png&name=240x240" alt="Logo Kishimoto">
+            </div> 
+            <button class="login" onclick="redirectToLogin()">Voltar</button>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="content-container">
+            <div class="image-container">
+                <img src="https://img.freepik.com/fotos-premium/onigiri-de-salmao-com-variedades-de-onigiri-de-salmao-em-uma-bandeja-de-entrega-closeup_311876-637.jpg?w=740" alt="Image">
+            </div>
+            <div class="form-container"> 
+                <h1>Criar uma nova senha de acesso</h1>
+                <form id="loginForm" onsubmit="redirectToDashboard(event)">
+                    <div class="email-container">
+                        <label for="text">Nova senha</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                <br>
+                    <div class="email-container">
+                        <label for="text">Confirmar senha</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirectToDashboard(event) {
+            event.preventDefault();  
+            window.location.href = 'login.html';  
+        }
+        function redirectToLogin() {
+            window.location.href = 'esqueceu.html';  
+        }
+    </script>
+</body>
+</html>

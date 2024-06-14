@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Pagamento</title>
+    <link rel="stylesheet" type="text/css" href="telapagamento.css" media="screen" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://pbs.twimg.com/media/GP_OnOYXgAA6gnd?format=png&name=240x240" alt="Logo Kishimoto">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="nossahistoria.html">Nossa História</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+            </ul>
+            <div class="profile">
+                <a href="carrinho.html"><img src="https://icones.pro/wp-content/uploads/2021/05/icone-de-panier-rouge.png" alt="Carrinho"></a>
+                <button>Meu perfil</button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="address">
+            <h2>Endereço para Envio</h2>
+            <p>Maria Lúcia</p>
+            <p>+55 21 ***-**11</p>
+            <p>Estrada Rio das Flores, 123</p>
+            <p>Rio de Janeiro RJ Brazil</p>
+            <p>00000-00</p>
+        </div>
+        <div class="payment">
+            <h2>Pagamento</h2>
+            <form id="paymentForm" onsubmit="validateForm(event)">
+                <div class="payment-method">
+                    <input type="radio" id="visa" name="payment-method" value="visa">
+                    <label for="visa">Visa</label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="mercadopago" name="payment-method" value="mercadopago">
+                    <label for="mercadopago">Mercado Pago</label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="mastercard" name="payment-method" value="mastercard">
+                    <label for="mastercard">Mastercard</label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="paypal" name="payment-method" value="paypal">
+                    <label for="paypal">PayPal</label>
+                </div>
+                <div class="finalizar-compra">
+                    <button type="submit">CONFIRMAR COMPRA</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p>Email: kishimoto@gmail.com</p>
+                <p>Telefone: (21) 00000-0000</p>
+            </div>
+            <div class="footer-social">
+                <h3>Redes Sociais</h3>
+                <p>Siga-nos nas redes sociais:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://cdn.worldvectorlogo.com/logos/twitter-logo-2.svg" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-form">
+                <h3>Fale Conosco</h3>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="footer-name">Nome:</label>
+                        <input type="text" id="footer-name" name="footer-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="footer-email">Email:</label>
+                        <input type="email" id="footer-email" name="footer-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="footer-message">Mensagem:</label>
+                        <textarea id="footer-message" name="footer-message" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            const paymentMethods = document.getElementsByName('payment-method');
+            let selected = false;
+            for (const method of paymentMethods) {
+                if (method.checked) {
+                    selected = true;
+                    break;
+                }
+            }
+            if (!selected) {
+                alert('Por favor, selecione um método de pagamento.');
+            } else {
+                window.location.href = 'metodpag.html';
+            }
+        }
+    </script>
+</body>
+</html>
